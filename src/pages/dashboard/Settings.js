@@ -3,13 +3,13 @@ import { Box, Stack } from "@mui/material";
 import React from "react";
 
 const Settings = () => {
-
-    const theme = useTheme();
+  const theme = useTheme();
   return (
     <>
       <Stack>
         {/* Left Pannel */}
-<Box sx={{
+        <Box
+          sx={{
             overflowY: "scroll",
             "&::-webkit-scrollbar": { display: "none" },
             height: "100vh",
@@ -19,13 +19,14 @@ const Settings = () => {
                 : theme.palette.background,
 
             boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.25)",
-          }}>
-            <Stack p={4} spacing={5}>
-{/* Header */}
-
-            </Stack>
-
-</Box>
+          }}
+        >
+          <Stack p={4} spacing={5}>
+            {/* Header */}
+            {/* Profile */}
+            {/* List of options */}
+          </Stack>
+        </Box>
         {/* Right Pannel */}
       </Stack>
     </>
